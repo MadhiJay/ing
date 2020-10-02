@@ -56,7 +56,7 @@ function make_password_hashed($pass){
 }
 function register(){
     if(!check_password_equility($_POST['password'],$_POST['confirm_password'])){
-        $_POST['alert-message']='Passwords are not the same.please retype the passwords';
+        $_POST['alert-message']='Passwords are not the same. please retype the passwords or contact our support';
         require 'views/signup.php';
     }else{
         $db = new DB();
